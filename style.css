@@ -1,0 +1,59 @@
+html{
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+#button {
+    margin-bottom: 40px;
+   
+    --color: firebrick;
+    --border-color: firebrick;
+    --shadow-color: rgb(112, 20, 20);
+
+    position: relative;
+    
+    width: 200px;
+}
+#display{
+    margin: 100%;
+    margin-bottom: 30px;
+}
+.click{
+    margin-top: 40px;
+    font-family: 'Press Start 2P';
+    font-size: 20px;
+    border-radius: .3rem;
+    padding: 25px;
+    color: white;
+    background-color: var(--border-color);
+    box-shadow: var(--shadow-color);
+}
+.click:hover{
+    background-color: var(--shadow-color);
+}
+
+@media screen and (min-width: 375px){
+    #display{
+        margin-top: 80%;
+    }
+}
